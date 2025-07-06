@@ -1,32 +1,37 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches:
-      - main  # 或你實際使用的分支名
-
+      - main
 permissions:
   contents: write
-
+  pages: write
+  id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
-
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive  # 使用 git submodule 安裝主題
+        fetch-depth: 0
+    
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v3
       with:
         hugo-version: 'latest'
         extended: true
-
+    
     - name: Build Hugo site
       run: hugo --minify --baseURL="https://kinako890419.github.io/blog/"
-
+    
+    - name: List public directory contents
+      run: ls -la public/  # 檢查生成的文件
+    
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
+        cname: kinako890419.github.io  # 如果使用自定義域名
