@@ -15,7 +15,7 @@ summary: " "
 
 ### 噗浪聊天機器人([點擊前往](https://www.plurk.com/hotwaterbot))
 
-![alt text](/images/image.png)
+![alt text](/blog/images/image.png)
 
 
 ## 學經歷
@@ -32,7 +32,7 @@ summary: " "
 
 - 畫畫
 
-![測試pic](/images/allSleep.gif)
+![測試pic](/blog/images/allSleep.gif)
 
 - 聽音樂
   - niconico(老人...)
