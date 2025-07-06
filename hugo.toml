@@ -1,4 +1,4 @@
-baseURL = 'https://localhost/'
+baseURL = 'https://kinako890419.github.io/blog/'
 languageCode = 'zh-tw'
 title = 'kinako890419'
 theme = "terminal"
