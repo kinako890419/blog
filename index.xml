@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Terminal</title><link>https://kinako890419.github.io/blog/</link><description>Recent content on Terminal</description><generator>Hugo</generator><language>tw</language><lastBuildDate>Sun, 06 Jul 2025 19:34:02 +0800</lastBuildDate><atom:link href="https://kinako890419.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>2025國泰世華銀行資訊人才CSP實習計畫 申請過程紀錄</title><link>https://kinako890419.github.io/blog/posts/202411-csp-intern-application/</link><pubDate>Sun, 06 Jul 2025 19:34:02 +0800</pubDate><guid>https://kinako890419.github.io/blog/posts/202411-csp-intern-application/</guid><description>&lt;blockquote>
+&lt;p>CSP上一次招資訊相關的是2018，網路資料通常只有暑期的CIP或學期的CAP 或國泰人壽或MA。CSP主要是銀行的，供参。&lt;/p>&lt;/blockquote>
+&lt;h2 id="背景">背景&lt;/h2>
+&lt;ul>
+&lt;li>碩二但沒在寫論文&lt;/li>
+&lt;li>之前沒寫過spring boot&lt;/li>
+&lt;/ul>
+&lt;h2 id="時程">時程&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>時程&lt;/th>
+ &lt;th>說明&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>-&lt;/td>
+ &lt;td>校園說明會&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>D0&lt;/td>
+ &lt;td>投遞履歷&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>D+21&lt;/td>
+ &lt;td>線上測驗（英文、邏輯、Java程式測驗）&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>D+26&lt;/td>
+ &lt;td>面試前作業&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>D+31&lt;/td>
+ &lt;td>繳交面試前作業介紹簡報，之後還有做修改所以交出去的跟面試實際使用的不太一樣&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>D+40&lt;/td>
+ &lt;td>線上面試&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>D+45&lt;/td>
+ &lt;td>錄取通知&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>收到錄取通知才會知道自己屬於什麼部門什麼科，照理來說不能換部門&lt;/p>
+&lt;hr>
+&lt;h2 id="線上測驗">線上測驗&lt;/h2>
+&lt;ul>
+&lt;li>全選擇，但選項沒有限制一定是單選&lt;/li>
+&lt;li>都有限時&lt;/li>
+&lt;/ul>
+&lt;h3 id="英文">英文&lt;/h3>
+&lt;ul>
+&lt;li>有長篇閱讀&lt;/li>
+&lt;li>類似多益&lt;/li>
+&lt;/ul>
+&lt;h3 id="邏輯">邏輯&lt;/h3>
+&lt;ul>
+&lt;li>有圖形題&lt;/li>
+&lt;li>&lt;strong>答錯倒扣&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="java">Java&lt;/h3>
+&lt;ul>
+&lt;li>就Java&lt;/li>
+&lt;li>考題不能複製&lt;/li>
+&lt;li>可參考Java OCP&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="面試前作業">面試前作業&lt;/h2>
+&lt;ul>
+&lt;li>使用Java Spring Boot 開發 Todo List，包含使用者註冊、登入、建立待辦事項以及筆記功能&lt;/li>
+&lt;li>總Demo時間限制10分鐘，包含簡報及實作畫面&lt;/li>
+&lt;/ul>
+&lt;h2 id="線上面試">線上面試&lt;/h2>
+&lt;ul>
+&lt;li>使用 Webex&lt;/li>
+&lt;li>HR開鏡頭，其餘主管都沒開，大概5-7個主管&lt;/li>
+&lt;li>email上面說會有一至兩位面試者，但我遇到的這場只有我一個，所以一個人面了40分鐘
+&lt;ul>
+&lt;li>自我介紹 → 簡報說明 → Demo → 主管問問題 → 我問問題&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>沒有問技術問題、也沒問第一階段程式測驗的東西&lt;/li>
+&lt;/ul>
+&lt;h3 id="主管提問">主管提問&lt;/h3>
+&lt;ul>
+&lt;li>遇到一個新的技術會怎麼做學習，怎麼找資料?&lt;/li>
+&lt;li>過去開發曾經遇到什麼問題，如何解決&lt;/li>
+&lt;li>寫這個作業遇到什麼困難，還是很簡單&lt;/li>
+&lt;li>在團隊當中負責什麼角色&lt;/li>
+&lt;li>開發前都會先做需求分析嗎，還是是為了這項作業才生需求分析&lt;/li>
+&lt;li>需求分析跟開發哪個時間比較長 (比較難? 忘了)&lt;/li>
+&lt;li>碩二下安排&lt;/li>
+&lt;li>以後就業後想走金融業嗎，還是沒有設限&lt;/li>
+&lt;li>有在找其他實習嗎&lt;/li>
+&lt;li>Service 層的 code review
+&lt;ul>
+&lt;li>檢查帳戶密碼格式的程式怎麼註解掉了 → 移到前端了&lt;/li>
+&lt;li>try-catch&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>後端資料庫怎麼設定之類的問題 (忘了)&lt;/li>
+&lt;li>最後有提到可改進的地方，是沒時間做嗎還是有其他考量&lt;/li>
+&lt;/ul>
+&lt;h3 id="feedback">Feedback&lt;/h3>
+&lt;ul>
+&lt;li>很少人有包含需求分析、流程圖的部分，滿完整的&lt;/li>
+&lt;/ul>
+&lt;h3 id="反問">反問&lt;/h3>
+&lt;ul>
+&lt;li>要更了解 Java 基礎&lt;/li>
+&lt;li>前三個月基礎培訓，之後分專案，會遇到需求分析&lt;/li>
+&lt;li>個人專案公司會給 → 分部門&lt;/li>
+&lt;/ul></description></item><item><title>自我介紹</title><link>https://kinako890419.github.io/blog/posts/hello-terminal/</link><pubDate>Sun, 06 Jul 2025 17:08:55 +0800</pubDate><guid>https://kinako890419.github.io/blog/posts/hello-terminal/</guid><description/></item></channel></rss>
