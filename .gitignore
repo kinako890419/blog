@@ -1,0 +1,17 @@
+# Hugo build output
+/public/
+/resources/
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+
+# macOS metadata
+*.DS_Store
+
+# Node.js
+node_modules/
+
+# Hugo temp files
+hugo_stats.json

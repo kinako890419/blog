@@ -1,0 +1,49 @@
+baseURL = 'https://localhost/'
+languageCode = 'zh-tw'
+title = 'kinako890419'
+theme = "terminal"
+pagination.pagerSize = 10
+
+# if your resource directory contains an image called `cover.(jpg|png|webp)`,
+# then the file will be used as a cover automatically.
+# With this option you don't have to put the `cover` param in a front-matter.
+autoCover = true
+
+[params]
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
+
+[languages]
+  [languages.tw]
+    languageName = "Taiwan"
+    title = "Terminal"
+
+    [languages.tw.params]
+      subtitle = "A simple, retro theme for Hugo"
+      owner = ""
+      keywords = ""
+      copyright = ""
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      newerPosts = "Newer posts"
+      olderPosts = "Older posts"
+      missingContentMessage = "Page not found..."
+      missingBackButtonLabel = "Back to home page"
+      minuteReadingTime = "min read"
+      words = "words"
+
+      [languages.tw.params.logo]
+        logoText = "kinako890419里民活動中心"
+        logoHomeLink = "/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/tags/HomePage"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts"
+    weight = 2
