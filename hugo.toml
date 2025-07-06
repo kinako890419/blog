@@ -36,7 +36,7 @@ autoCover = true
 
       [languages.tw.params.logo]
         logoText = "kinako890419里民活動中心"
-        logoHomeLink = "/blog/tags/HomePage"
+        logoHomeLink = "/blog/tags/HomePage/"
 
 [menu]
   [[menu.main]]
