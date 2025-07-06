@@ -3,7 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # 或你實際使用的分支名
+
+permissions:
+  contents: write
 
 jobs:
   build:
