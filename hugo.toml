@@ -17,7 +17,7 @@ autoCover = true
 [languages]
   [languages.tw]
     languageName = "Taiwan"
-    title = "Terminal"
+    title = "kinako890410"
 
     [languages.tw.params]
       subtitle = "A simple, retro theme for Hugo"
@@ -36,7 +36,7 @@ autoCover = true
 
       [languages.tw.params.logo]
         logoText = "kinako890419里民活動中心"
-        logoHomeLink = "/"
+        logoHomeLink = "/tags/HomePage"
 
 [menu]
   [[menu.main]]
