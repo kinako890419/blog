@@ -17,7 +17,7 @@ autoCover = true
 [languages]
   [languages.tw]
     languageName = "Taiwan"
-    title = "kinako890410"
+    title = "kinako890419"
 
     [languages.tw.params]
       subtitle = "A simple, retro theme for Hugo"
