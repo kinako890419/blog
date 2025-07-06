@@ -6,8 +6,10 @@ tags:
   - "自介"
   - "AboutMe"
   - "HomePage"
-summary: " "
+
+cover: images/allSleep.gif
 ---
+<!--more-->
 
 我的 [個人履歷(CakeResume)](https://www.cake.me/s--Qbettfics_-JPjhzuDgiCg--/kinako890419)｜[GITHUB](https://github.com/kinako890419)｜[LINKEDIN](https://www.linkedin.com/in/%E5%AE%A5%E6%B1%9D-%E9%99%B3-56b327234/)
 
@@ -30,13 +32,12 @@ summary: " "
 
 ## 興趣愛好
 
+- 吉伊卡哇
 - 畫畫
-
-![測試pic](/blog/images/allSleep.gif)
-
 - 聽音樂
   - niconico(老人...)
   - 一些jpop
+- 睡覺
 
 {{< youtube JE_GFOk90oU >}}
 

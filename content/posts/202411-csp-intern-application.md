@@ -2,14 +2,17 @@
 title = "2025國泰世華銀行資訊人才CSP實習計畫 申請過程紀錄"
 date = "2025-07-06T19:34:02+08:00"
 tags = ["實習", "國泰CSP"]
-keywords = ["國泰世華", "國泰CSP", "CSP實習", "國泰IT", "實習", "銀行實習", "存匯核心科", "國泰IT工作分享", "資訊人才CSP"]
-description = "國泰IT實習申請過程 (學期實習)"
+keywords = ["國泰世華", "國泰CSP", "CSP實習", "國泰IT", "實習", "銀行實習", "存匯核心科", "國泰IT工作分享", "資訊人才CSP", "國泰IT實習申請過程", "學期實習"]
 showFullContent = false
 readingTime = false
 hideComments = false
 +++
 
+*國泰IT實習申請過程 (學期實習)*
+
 > CSP上一次招資訊相關的是2018，網路資料通常只有暑期的CIP或學期的CAP 或國泰人壽或MA。CSP主要是銀行的，供参。
+
+<!--more-->
 
 ## 背景
 
