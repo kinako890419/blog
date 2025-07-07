@@ -1,14 +1,14 @@
----
-title: "自我介紹"
-date: 2025-07-06T17:08:55+08:00
-draft: false
-tags:
-  - "自介"
-  - "AboutMe"
-  - "HomePage"
-
-cover: images/allSleep.gif
----
++++
+title = "自我介紹"
+date = "2025-07-06T17:08:55+08:00"
+tags = ["AboutMe", "HomePage"]
+keywords = ["國泰面試心得"]
+showFullContent = false
+readingTime = false
+hideComments = false
+type = "posts"
++++
+![cover](/blog/images/allSleep.gif)
 <!--more-->
 
 我的 [個人履歷(CakeResume)](https://www.cake.me/s--Qbettfics_-JPjhzuDgiCg--/kinako890419)｜[GITHUB](https://github.com/kinako890419)｜[LINKEDIN](https://www.linkedin.com/in/%E5%AE%A5%E6%B1%9D-%E9%99%B3-56b327234/)

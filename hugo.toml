@@ -10,7 +10,7 @@ pagination.pagerSize = 10
 autoCover = true
 
 [params]
-  contentTypeName = "none"
+  contentTypeName = "posts"
   showMenuItems = 2
   fullWidthTheme = false
   centerTheme = true
@@ -21,9 +21,9 @@ autoCover = true
     title = "kinako890419"
 
     [languages.tw.params]
-      subtitle = "A simple, retro theme for Hugo"
-      owner = ""
-      keywords = ""
+      subtitle = "kinako890419里民活動中心｜筆記紀錄"
+      owner = "kinako890419"
+      keywords = "kinako890419"
       copyright = ""
       menuMore = "Show more"
       readMore = "Read more"
