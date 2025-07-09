@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kinako890419.github.io/blog/sitemap.xml

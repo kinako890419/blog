@@ -34,4 +34,3 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
-        cname: kinako890419.github.io  # 如果使用自定義域名
