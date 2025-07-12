@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kinako890419.github.io/blog/sitemap.xml
+Sitemap: https://kinako890419.github.io/blog/index.xml
+
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /404.html
