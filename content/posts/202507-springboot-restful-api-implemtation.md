@@ -1,5 +1,5 @@
 +++
-title = "課程筆記 Spring Boot 與 Spring Security 實作 RESTful API"
+title = "[課程筆記] Spring Boot 與 Spring Security 實作 RESTful API"
 date = "2025-07-04T00:00:00+08:00"
 #dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
 tags = ["課程筆記", "SpringAcademy", "SpringBoot"]
@@ -8,6 +8,9 @@ showFullContent = false
 readingTime = true
 hideComments = false
 +++
+
+> 課程連結：https://spring.academy/courses/building-a-rest-api-with-spring-boot
+
 
 # Part 0: 大綱
 
