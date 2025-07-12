@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>課程筆記 on kinako890419</title><link>https://kinako890419.github.io/blog/tags/%E8%AA%B2%E7%A8%8B%E7%AD%86%E8%A8%98/</link><description>Recent content in 課程筆記 on kinako890419</description><generator>Hugo</generator><language>tw</language><lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://kinako890419.github.io/blog/tags/%E8%AA%B2%E7%A8%8B%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml"/><item><title>課程筆記 Spring Boot 與 Spring Security 實作 RESTful API</title><link>https://kinako890419.github.io/blog/posts/202507-springboot-restful-api-implemtation/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0800</pubDate><guid>https://kinako890419.github.io/blog/posts/202507-springboot-restful-api-implemtation/</guid><description>&lt;h1 id="part-0-大綱">Part 0: 大綱&lt;/h1>
+&lt;h2 id="專案目標">專案目標&lt;/h2>
+&lt;p>建立一個家庭零用錢管理應用：&lt;/p>
+&lt;ul>
+&lt;li>利用 Spring Boot 創建 &lt;strong>RESTful API&lt;/strong> 與網頁應用&lt;/li>
+&lt;li>Spring Data, Spring Security 初探&lt;/li>
+&lt;li>專案導向的課程&lt;/li>
+&lt;li>Test-First 開發方法: 通常會在實作之前編寫測試&lt;/li>
+&lt;/ul>
+&lt;h2 id="內容總覽">內容總覽&lt;/h2>
+&lt;ol>
+&lt;li>RESTful API 基礎設計原則&lt;/li>
+&lt;li>測試導向開發（TDD）&lt;/li>
+&lt;li>使用 Spring Boot 開發 RESTfulAPI&lt;/li>
+&lt;li>Spring Security 應用&lt;/li>
+&lt;li>安全性機制與風險防護&lt;/li>
+&lt;/ol></description></item></channel></rss>
