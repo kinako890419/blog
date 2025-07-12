@@ -11,10 +11,17 @@ enableRobotsTXT = true
 autoCover = true
 
 [params]
+  author = "kinako890419"
+  description = "生活紀錄｜筆記整理"
   contentTypeName = "posts"
   showMenuItems = 2
   fullWidthTheme = false
   centerTheme = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [languages]
   [languages.tw]
@@ -49,3 +56,8 @@ autoCover = true
     name = "Posts"
     url = "/posts"
     weight = 2
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]

@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kinako890419.github.io/blog/sitemap.xml
+Sitemap: {{.Site.BaseURL}}sitemap.xml
+Sitemap: {{.Site.BaseURL}}index.xml
+
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /404.html
