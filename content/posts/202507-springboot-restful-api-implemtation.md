@@ -2,7 +2,7 @@
 title = "[課程筆記] Spring Boot 與 Spring Security 實作 RESTful API"
 date = "2025-07-04T00:00:00+08:00"
 #dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
-tags = ["課程筆記", "SpringAcademy", "SpringBoot"]
+tags = ["筆記", "課程筆記", "SpringAcademy", "SpringBoot"]
 keywords = ["Spring Boot 課程筆記", "Spring Academy 筆記"]
 showFullContent = false
 readingTime = true
@@ -201,7 +201,10 @@ public class CashCardJsonTest {
 }
 ```
 
-expected.json:
+- `cashCardSerializationTest()` 測試 Java 物件 → JSON 字串的轉換
+- `cashCardDeserializationTest()` 測試 JSON 字串 → Java 物件的轉換
+
+##### expected.json:
 
 ```json
 {  
@@ -209,6 +212,27 @@ expected.json:
   "amount": 123.45  
 }
 ```
+
+### `@SpringBootTest` 測試
+
+```java {linenos=inline}
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)  
+class CashCardApplicationTests {  
+
+    @Autowired  
+    TestRestTemplate restTemplate;
+    
+    //...
+```
+
+| 選項             | 意思                                               |
+| -------------- | ------------------------------------------------ |
+| `MOCK`（預設）     | 不啟動 Web 伺服器，模擬 MVC 測試，使用 `MockMvc`               |
+| `RANDOM_PORT`  | 啟動內建的 Web 伺服器（如 Tomcat），並用隨機 port 避免衝突           |
+| `DEFINED_PORT` | 使用 `application.properties` 中設定的固定 port（例如 8080） |
+| `NONE`         | 完全不啟動 Web 環境，純粹用來測試非 web 的部分                     |
+
+---
 
 ## GET, POST 單筆資料 API
 
@@ -768,6 +792,54 @@ void shouldReturnAllCashCardsWhenListIsRequested() {
 
 ![alt](/blog/images/pstmn_image.png)
 
+### @DirtiesContext 功能
+
+1. 解決測試間的數據污染問題
+2. 消除測試執行順序對結果的影響，確保測試的獨立性
+
+- 在**class**上加上`@DirtiesContext(classMode = ClassMode.AFTER_EACH_TEST_METHOD)`在測試時每個測試都重新初始化
+- 在**方法**上加上`@DirtiesContext`可以在需要時才使用其功能 ⬅ 較推薦
+
+例如 `shouldCreateANewCashCard()` 與 `shouldReturnAllCashCardsWhenListIsRequested()` 之間會互相影響:
+
+```java {linenos=inline}
+@Test
+void shouldCreateANewCashCard() {
+    CashCard newCashCard = new CashCard(null, 250.00);
+    // 這個測試會在資料庫中創建一個新的 CashCard
+    ResponseEntity<Void> createResponse = restTemplate.postForEntity("/cashcards", newCashCard, Void.class);
+    // ...
+}
+
+@Test
+void shouldReturnAllCashCardsWhenListIsRequested() {
+    ResponseEntity<String> response = restTemplate.getForEntity("/cashcards", String.class);
+    
+    DocumentContext documentContext = JsonPath.parse(response.getBody());
+    int cashCardCount = documentContext.read("$.length()");
+    assertThat(cashCardCount).isEqualTo(3); // 期望只有3個，但可能會有4個
+}
+```
+
+如果先執行「新增一筆cash card資料」的測試，再執行「查詢所有cash card資料」的測試，原先寫好的測試會發生error:
+
+```
+org.opentest4j.AssertionFailedError: 
+expected: 3
+ but was: 4
+...
+```
+
+⮕ 在 `shouldCreateANewCashCard()` 上方加上`@DirtiesContext`註解
+
+```java {linenos=inline}
+@Test
+@DirtiesContext
+void shouldCreateANewCashCard() {
+    // 只在這個測試後清理上下文
+}
+```
+
 ### 新增功能的認證
 
 - 測試 post API，使用一個有登入但沒有權限的帳號
@@ -879,7 +951,7 @@ void shouldUpdateAnExistingCashCard() {
 }
 ```
 
-- RestTemplate 一般的 PUT (`.put()`方法) 成功時會回傳 201或是200 response，因此沒有`putForEntity()`這個方法 => 使用 `exchange()` 方法替代
+- RestTemplate 一般的 PUT (`.put()`方法) 成功時會回傳 201或是200 response，因此沒有`putForEntity()`這個方法 ⮕ 使用 `exchange()` 方法替代
 - `exhange(URL, HTTP方法, request HTTPEntity, response類型, ...URI變數)` 可以執行指定的HTTP方法並回傳 response entity
 
 ### 測試資料
@@ -1111,3 +1183,43 @@ void shouldNotAllowDeletionOfCashCardsTheyDoNotOwn() {
     assertThat(deleteResponse.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
 }
 ```
+
+---
+
+# 📌 總結
+
+## 課程與專案目標
+- 建立一個家庭零用錢管理應用
+- 以 Spring Boot 開發 RESTful API
+- 導入 Spring Security 實作基礎認證與授權
+- 採用測試導向開發（TDD）流程
+
+## RESTful API 與 HTTP 基礎
+
+- 冪等性（Idempotence）
+- URI/URL/URN 概念與差異
+- 使用 UriComponentsBuilder 動態組建 URL
+
+## TDD 開發流程
+- 使用 `@JsonTest` 測試 JSON (序列化/反序列化)
+- 使用 `@SpringBootTest` 測試 API 回應與行為
+- 善用 `@DirtiesContext` 避免測試污染與錯誤
+
+## Spring Security 應用
+- 採用 **Basic Authentication**
+- 設定 `SecurityFilterChain` 控制 API 安全性
+- 透過 `UserDetailsService` 實作自訂帳號密碼與角色
+- 採用 RBAC（角色為基礎的存取控制）
+- 搭配 Principal 限制使用者只能存取自己的資料
+
+## API CRUD 功能實作
+- **GET** `/cashcards/{id}`：查詢單筆
+- **GET** `/cashcards`：支援分頁查詢
+- **POST** `/cashcards`：新增，透過登入者身分設定 OWNER 欄位
+- **PUT** `/cashcards/{id}`：完整更新，必須為該資源擁有者
+- **DELETE** `/cashcards/{id}`：刪除資源，僅限擁有者
+
+## 資料保護與授權強化
+- CashCardRepository 加入 owner 過濾條件
+- 查詢、修改、刪除都需比對 `Principal.getName()` 確保資料歸屬
+- 避免回傳 403 Forbidden 改用 404 Not Found 隱藏資源存在性
