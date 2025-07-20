@@ -6,9 +6,7 @@ framed = true
 
 ![](/blog/images/插圖.png)
 
-我的 [個人履歷(CakeResume)](https://www.cake.me/s--Qbettfics_-JPjhzuDgiCg--/kinako890419)｜[噗浪聊天機器人](https://www.plurk.com/hotwaterbot)｜[GITHUB](https://github.com/kinako890419)｜[LINKEDIN](https://www.linkedin.com/in/%E5%AE%A5%E6%B1%9D-%E9%99%B3-56b327234/)
-
-##### 自我介紹([點此進入](https://kinako890419.github.io/blog/posts/hello-terminal/))
+我的 自我介紹([點此進入](https://kinako890419.github.io/blog/posts/hello-terminal/))｜[噗浪聊天機器人](https://www.plurk.com/hotwaterbot)｜[GITHUB](https://github.com/kinako890419)
 
 ##### 本站用途
 
